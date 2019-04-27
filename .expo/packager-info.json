@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 76896,
+  "expoServerNgrokUrl": "https://gc-qv4.anonymous.smartlist.exp.direct",
+  "packagerNgrokUrl": "https://packager.gc-qv4.anonymous.smartlist.exp.direct",
+  "ngrokPid": 77412,
   "webpackServerPort": null
 }

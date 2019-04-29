@@ -20,7 +20,7 @@ export default class App extends Component {
   componentDidMount() {
     console.log("componentDidMount()");
     getToDo().then(list => {
-      console.log(list);
+      console.log("list from componentDidMount() is: ", list);
       this.setState({ list });
     });
   }
@@ -30,10 +30,8 @@ export default class App extends Component {
   }
 
   appendList(item) {
-    console.log("appending");
-    console.log(this.state);
-    console.log([...this.state.list, item]);
-    appendToDo([...this.state.list, item]).then(result => console.log(result));
+    console.log("appending", item);
+    appendToDo([...this.state.list, item]);
     this.setState({
       list: [...this.state.list, item]
     });

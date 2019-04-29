@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { Input } from "react-native-elements";
+import { test } from "../storage/LocalStorage";
 
 export default class AddItem extends Component {
   constructor(props) {
     super(props);
     this.state = { input: "" };
     this.submitInput = this.submitInput.bind(this);
+    // this.localStorage = new LocalStorage();
   }
 
   submitInput() {

@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { StyleSheet, View, Text } from "react-native";
 import List from "./components/List";
-import { Header, Input } from "react-native-elements";
-import dummyData from "./dummyData";
-import AddItem from "./components/AddItem";
+import { Header } from "react-native-elements";
+import InputField from "./components/InputField";
 import { getToDo, appendToDo } from "./storage/LocalStorage";
 
 export default class App extends Component {
@@ -20,7 +19,6 @@ export default class App extends Component {
   componentDidMount() {
     console.log("componentDidMount()");
     getToDo().then(list => {
-      console.log("list from componentDidMount() is: ", list);
       this.setState({ list });
     });
   }
@@ -46,7 +44,7 @@ export default class App extends Component {
           rightComponent={{ icon: "home", color: "#fff" }}
         />
         <List list={this.state.list} modifyList={this.modifyList} />
-        <AddItem appendList={this.appendList} />
+        <InputField appendList={this.appendList} />
         <Text>{JSON.stringify(this.state.input)}</Text>
         <Text>{JSON.stringify(this.state.list)}</Text>
       </View>

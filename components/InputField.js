@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Input } from "react-native-elements";
-import { test } from "../storage/LocalStorage";
 
-export default class AddItem extends Component {
+export default class InputField extends Component {
   constructor(props) {
     super(props);
     this.state = { input: "" };

@@ -2,7 +2,17 @@ import React, { Component } from "react";
 import { AsyncStorage } from "react-native";
 import dummyData from "../dummyData";
 
+const resetDB = async () => {
+  console.log("resetting db");
+  try {
+    await AsyncStorage.setItem('ToDo"', dummyData);
+  } catch (error) {
+    console.log("failure to resetDB", error);
+  }
+};
+
 const getToDo = async () => {
+  resetDB();
   try {
     const toDoList = await AsyncStorage.getItem("ToDo");
     if (toDoList === null || !(JSON.parse(toDoList) instanceof Array)) {
@@ -27,6 +37,7 @@ const appendToDo = async list => {
 };
 
 export {
+  resetDB,
   getToDo,
   appendToDo
   /*

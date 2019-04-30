@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 202084,
+  "expoServerNgrokUrl": "https://pr-xpn.anonymous.smartlist.exp.direct",
+  "packagerNgrokUrl": "https://packager.pr-xpn.anonymous.smartlist.exp.direct",
+  "ngrokPid": 200652,
   "webpackServerPort": null
 }

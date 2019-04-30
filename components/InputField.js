@@ -10,12 +10,7 @@ export default class InputField extends Component {
   }
 
   submitInput() {
-    const inputObject = {
-      Item: this.state.input,
-      Quantity: "1",
-      Checked: false
-    };
-    this.props.appendList(inputObject);
+    this.props.appendList(this.state.input);
     this.state.input = "";
   }
 

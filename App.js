@@ -3,7 +3,8 @@ import { StyleSheet, View, Text } from "react-native";
 import List from "./components/List";
 import { Header } from "react-native-elements";
 import InputField from "./components/InputField";
-import { getToDo, appendToDo } from "./storage/LocalStorage";
+import { resetDB, getToDo, appendToDo } from "./storage/LocalStorage";
+import { createItemObject } from "./storage/ItemObject";
 
 export default class App extends Component {
   constructor() {
@@ -27,7 +28,8 @@ export default class App extends Component {
     this.setState({ list });
   }
 
-  appendList(item) {
+  appendList(inputText) {
+    const item = createItemObject(inputText);
     console.log("appending", item);
     appendToDo([...this.state.list, item]);
     this.setState({

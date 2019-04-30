@@ -1,28 +1,28 @@
 const dummyData = [
   {
-    Item: "Apples",
-    Quantity: 10,
-    Checked: false
+    item: "Apples",
+    quantity: 10,
+    checked: false
   },
   {
-    Item: "Candy",
-    Quantity: 5,
-    Checked: false
+    item: "Candy",
+    quantity: 5,
+    checked: false
   },
   {
-    Item: "Oranges",
-    Quantity: 5,
-    Checked: false
+    item: "Oranges",
+    quantity: 5,
+    checked: false
   },
   {
-    Item: "Chocolate",
-    Quantity: "3lb",
-    Checked: false
+    item: "Chocolate",
+    quantity: "3lb",
+    checked: false
   },
   {
-    Item: "Flour",
-    Quantity: "2 cups",
-    Checked: false
+    item: "Flour",
+    quantity: "2 cups",
+    checked: false
   }
 ];
 

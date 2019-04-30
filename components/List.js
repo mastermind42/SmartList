@@ -40,14 +40,14 @@ export default class List extends Component {
                 flexGrow: 1
               }}
             >
-              {item.Item}
+              {item.item}({item.quantity})
             </Text>
             <CheckBox
               right
               uncheckedIcon="circle-o"
               checkedIcon="dot-circle-o"
               onIconPress={() => this.checkItem(index)}
-              checked={item.Checked}
+              checked={item.checked}
             />
           </View>
         )}
